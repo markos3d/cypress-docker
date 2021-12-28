@@ -6,7 +6,7 @@ node {
     }
 
     stage('run image') {
-        sh "sudo docker-compose -f hello-world-cypress/e2e/docker-compose.yml up --abort-on-container-exit cypress"
+        sh "sudo docker-compose -f ./e2e/docker-compose.yml up --abort-on-container-exit cypress"
         
     } 
 }
